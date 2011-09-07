@@ -385,7 +385,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				SYMROOT = builds;
+				SYMROOT = $SYMROOT;
 			};
 			name = Beta;
 		};
@@ -424,7 +424,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				SYMROOT = builds;
+				SYMROOT = $SYMROOT;
 			};
 			name = Debug;
 		};
@@ -443,7 +443,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				SYMROOT = builds;
+				SYMROOT = $SYMROOT;
 			};
 			name = Release;
 		};
