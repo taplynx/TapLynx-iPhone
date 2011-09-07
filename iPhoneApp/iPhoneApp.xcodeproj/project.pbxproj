@@ -47,7 +47,9 @@
 		84C304EC1082C1DF001A7D74 /* video_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C304EB1082C1DF001A7D74 /* video_tab.png */; };
 		84C3054D1082C367001A7D74 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3054C1082C367001A7D74 /* MessageUI.framework */; };
 		84CDCFE91082DED500660E62 /* TwitterTemplate.html in Resources */ = {isa = PBXBuildFile; fileRef = 84CDCFE81082DED500660E62 /* TwitterTemplate.html */; };
-		8D69BE81135E888600821B67 /* libTapLynx_1.4.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D69BE80135E888600821B67 /* libTapLynx_1.4.4.a */; };
+		D826A7A31417E17F00285D7E /* libTapLynx_1.5rc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D826A7A21417E17F00285D7E /* libTapLynx_1.5rc.a */; };
+		D826A7A61417E1A100285D7E /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D826A7A41417E1A100285D7E /* iAd.framework */; };
+		D826A7A71417E1A100285D7E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D826A7A51417E1A100285D7E /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,7 +96,9 @@
 		84C3054C1082C367001A7D74 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		84CDCFE81082DED500660E62 /* TwitterTemplate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = TwitterTemplate.html; path = Resources/TwitterTemplate.html; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D69BE80135E888600821B67 /* libTapLynx_1.4.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTapLynx_1.4.4.a; path = ../libTapLynx_1.4.4.a; sourceTree = SOURCE_ROOT; };
+		D826A7A21417E17F00285D7E /* libTapLynx_1.5rc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTapLynx_1.5rc.a; path = ../libTapLynx_1.5rc.a; sourceTree = "<group>"; };
+		D826A7A41417E1A100285D7E /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		D826A7A51417E1A100285D7E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D826A7A61417E1A100285D7E /* iAd.framework in Frameworks */,
+				D826A7A71417E1A100285D7E /* StoreKit.framework in Frameworks */,
+				D826A7A31417E17F00285D7E /* libTapLynx_1.5rc.a in Frameworks */,
 				846A8C03106C844A00182AC8 /* libsqlite3.0.dylib in Frameworks */,
 				846A8C07106C845300182AC8 /* libxml2.2.dylib in Frameworks */,
 				846A8C09106C845700182AC8 /* UIKit.framework in Frameworks */,
@@ -114,7 +121,6 @@
 				846A8C25106C846E00182AC8 /* CoreLocation.framework in Frameworks */,
 				84C3054D1082C367001A7D74 /* MessageUI.framework in Frameworks */,
 				842CB1A910FC82F900281756 /* libz.1.2.3.dylib in Frameworks */,
-				8D69BE81135E888600821B67 /* libTapLynx_1.4.4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,9 +173,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8D69BE80135E888600821B67 /* libTapLynx_1.4.4.a */,
+				D826A7A21417E17F00285D7E /* libTapLynx_1.5rc.a */,
 				846A8C02106C844A00182AC8 /* libsqlite3.0.dylib */,
 				846A8C06106C845300182AC8 /* libxml2.2.dylib */,
+				D826A7A41417E1A100285D7E /* iAd.framework */,
+				D826A7A51417E1A100285D7E /* StoreKit.framework */,
 				846A8C08106C845700182AC8 /* UIKit.framework */,
 				846A8C0C106C845A00182AC8 /* Foundation.framework */,
 				846A8C10106C845E00182AC8 /* SystemConfiguration.framework */,
@@ -334,6 +342,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries\"",
@@ -351,6 +360,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries\"",
@@ -388,6 +398,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries\"",
