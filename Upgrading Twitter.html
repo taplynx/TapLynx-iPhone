@@ -1,0 +1,78 @@
+<html><head><style>
+body {
+	font-family: Helvetica;
+	color: #333;
+	margin: 50px;
+	line-height: 1.5em;
+}
+h1 {
+	color: #fff;
+	background-color: #007fb3;
+	padding: 10px;
+}
+h3 {
+	margin-top: 2em;
+	color: #007fb3;
+}
+h4 {
+	margin-bottom: -1em;
+	color: #666;
+}
+hr {
+	margin-top: 50px;
+}
+</style><title>Upgrading Twitter</title></head>
+
+<body>
+
+<h1>Upgrading Twitter</h1>
+
+<h2>If you were using an earlier version of TapLynx...</h2>
+
+<p>You didn&rsquo;t have to do anything special to make posting to Twitter work.</p>
+
+<p>But Twitter has changed the way their system works, and apps that want to post to Twitter need to do a few things:</p>
+
+<ol>
+<li>Register with Twitter. Start at <a href="http://dev.twitter.com/">dev.twitter.com</a>.</li>
+<li>Get a consumer secret and consumer key. You&rsquo;ll get these when you register.</li>
+<li>Email Twitter and ask them to enable xAuth access for your app. See <a href="http://dev.twitter.com/pages/xauth">this page for the email address</a> where you can send your request. Explain to them that you have an iPhone app that posts to Twitter. You can even mention TapLynx if you want.</li>
+</ol>
+
+<h4>Configuration in TapLynx</h4>
+
+<p>Once you&rsquo;ve done the above, then you&rsquo;ll need to add your consumer secret and consumer key to your app.</p>
+
+<p>In Xcode, select the main.m file. You should see a section that looks like the below. (If you don't see it, copy and paste it in. You can get a copy from main.m in the sample iPhoneApp that comes with TapLynx.)</p>
+
+<pre>@interface TLSecrets : NSObject
++ (NSString *)twitterConsumerKey;
++ (NSString *)twitterConsumerSecret;
+@end
+
+@implementation TLSecrets
++ (NSString *)twitterConsumerKey {
+	//key goes between quotes, as in: return @"46wBr2ArP5rcHH0ZRyNpu";
+	return @"";
+}
++ (NSString *)twitterConsumerSecret {
+	//secret goes between quotes, as in: return @"rYfjQY5fNzzSJ4ywSSrdUROse9a7Wh8dtuN0Ogf6m";
+	return @""; 
+}
+@end</pre>
+
+<p>Put your consumer secret and consumer key between the quotes, as described in the comments (lines that start with //) above. (Congratulations! You've just written some Objective-C code!)</p>
+
+<h4>What happens if you haven&rsquo;t done the above yet</h4>
+
+<p>You can test posting-to-Twitter in the simulator. It uses a default consumer secret and key for TapLynx.</p>
+
+<p>But those TapLynx keys won&rsquo;t work on the device. For post-to-Twitter to work on a device, you&rsquo;ll need your own consumer secret and key.</p>
+
+
+<hr>
+<p><a href="http://taplynx.com/">TapLynx.com</a><br />
+	<a href="http://newsgator.com/">NewsGator.com</a><br />
+	&copy; 2009-2010 NewsGator Technologies, Inc.</p>
+</body>
+</html>

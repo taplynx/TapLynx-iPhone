@@ -1,0 +1,67 @@
+<html><head>
+<title>[[title]]</title>
+<style type="text/css">
+body {
+	line-height:1.35em;
+	color:[[NewsItemHTML_DescriptionColor]];
+	font-family:Helvetica;
+	-webkit-text-size-adjust:none;margin-left:0px;
+	margin-top:0px;
+	margin-right:0px;
+	background-colorxx: #ccc;
+	background:-webkit-gradient(linear, left top, left bottom, from(#ccc), color-stop(1, #F9F9F9));
+	}
+a, a:link, a:visited {
+	text-decoration:none;
+	font-weight:bold
+	}
+a, a:link, a:visited {
+	color:[[NewsItemHTML_LinkColor]];
+	}
+.dateline {
+	color:[[NewsItemHTML_DatelineColor]];
+	margin-top:14px;
+	margin-left:12px;
+	margin-right:12px;
+	margin-bottom:-8px;
+	}
+.content {
+	margin-left:12px;
+	margin-right:12px;\
+	font-size:0.95em;
+	}
+#thumbnailImage {
+	float:right;
+	padding-right:8px;
+	padding-left:8px;
+	padding-bottom:8px;
+	padding-top:18px;
+	}
+img {
+	display: block;
+	float: none;
+	text-align: center;
+	max-height: 100%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	}
+.newsItem {
+	padding: 20px;
+	margin: 20px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 1px 3px #999;
+	-webkit-border-radius: 6px;
+	border: 1px solid #666;
+	line-height:1.6em;
+	}
+	</style>
+<meta name="viewport" content="width=320; initial-scale=1.0; minimum-scale=1.0;"/>
+</head><body>
+<div class="newsItem">
+[[startPageLink]][[thumbnailImageIfNotInline]][[endPageLink]]
+<div class="content">[[content]]</div>
+<h4 class="dateline">[[date]] [[feedName]]</h4>
+</div>
+</body></html>
