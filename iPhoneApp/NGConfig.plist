@@ -2,14 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Ad_GradientEndColor</key>
-	<string>#999999</string>
-	<key>Ad_GradientStartColor</key>
-	<string>#BBBBBB</string>
-	<key>Ad_GradientTopLine</key>
-	<string>#BBBBBB</string>
 	<key>AppURL</key>
-	<string>http://example.com/</string>
+	<string>http://taplynx.com/</string>
 	<key>Downloads_MaxConcurrent</key>
 	<integer>4</integer>
 	<key>NavController_color</key>
@@ -186,21 +180,13 @@
 	<string></string>
 	<key>WebAds_Height</key>
 	<integer>50</integer>
-	<key>WebAds_QuattroBackgroundColor</key>
-	<string>#CCCCCC</string>
-	<key>WebAds_QuattroPublisherID</key>
-	<string></string>
-	<key>WebAds_QuattroSiteID</key>
-	<string></string>
 	<key>WebAds_Show</key>
 	<true/>
 	<key>WebAds_Type</key>
 	<string>static</string>
 	<key>WebAds_URL</key>
-	<string>http://skiracing.com/adgrab.php</string>
-	<key>WebAds_UseQuattro</key>
-	<false/>
+	<string>http://2push2.us/taplynx/test_web_ad.php</string>
 	<key>WebAds_Width</key>
-	<integer>300</integer>
+	<integer>320</integer>
 </dict>
 </plist>

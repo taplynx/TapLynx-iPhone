@@ -2,9 +2,9 @@
 //  main.m
 //  iPhoneApp
 //
-//  Created by Brent Simmons on 5/27/09.
-//  Copyright NewsGator Technologies, Inc. 2009. All rights reserved.
+//  Copyright 2011 All Rights Reserved Push IO, LLC
 //
+//  Created by Brent Simmons on 5/27/09.
 
 #import <UIKit/UIKit.h>
 
