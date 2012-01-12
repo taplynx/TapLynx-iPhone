@@ -49,7 +49,7 @@
 		D826A7A61417E1A100285D7E /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D826A7A41417E1A100285D7E /* iAd.framework */; };
 		D826A7A71417E1A100285D7E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D826A7A51417E1A100285D7E /* StoreKit.framework */; };
 		D83A352C14AF189100ED430A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D83A352B14AF189100ED430A /* libz.dylib */; };
-		D8FC967F14BBE51100CE6549 /* libTapLynx_1.5rc10.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FC967E14BBE51100CE6549 /* libTapLynx_1.5rc10.a */; };
+		D83D7A5A14BF71C600F42AE1 /* libTapLynx_1.5rc11.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D83D7A5914BF71C600F42AE1 /* libTapLynx_1.5rc11.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +98,7 @@
 		D826A7A41417E1A100285D7E /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		D826A7A51417E1A100285D7E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D83A352B14AF189100ED430A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D8FC967E14BBE51100CE6549 /* libTapLynx_1.5rc10.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTapLynx_1.5rc10.a; sourceTree = "<group>"; };
+		D83D7A5914BF71C600F42AE1 /* libTapLynx_1.5rc11.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTapLynx_1.5rc11.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 				846A8C21106C846B00182AC8 /* MediaPlayer.framework in Frameworks */,
 				846A8C25106C846E00182AC8 /* CoreLocation.framework in Frameworks */,
 				84C3054D1082C367001A7D74 /* MessageUI.framework in Frameworks */,
-				D8FC967F14BBE51100CE6549 /* libTapLynx_1.5rc10.a in Frameworks */,
+				D83D7A5A14BF71C600F42AE1 /* libTapLynx_1.5rc11.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +173,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D8FC967E14BBE51100CE6549 /* libTapLynx_1.5rc10.a */,
+				D83D7A5914BF71C600F42AE1 /* libTapLynx_1.5rc11.a */,
 				D83A352B14AF189100ED430A /* libz.dylib */,
 				846A8C02106C844A00182AC8 /* libsqlite3.0.dylib */,
 				846A8C06106C845300182AC8 /* libxml2.2.dylib */,
@@ -336,6 +336,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -357,6 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = prefix.pch;
@@ -395,6 +403,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				CODE_SIGN_ENTITLEMENTS = dist.plist;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
