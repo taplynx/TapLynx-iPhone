@@ -48,8 +48,8 @@
 		84CDCFE91082DED500660E62 /* TwitterTemplate.html in Resources */ = {isa = PBXBuildFile; fileRef = 84CDCFE81082DED500660E62 /* TwitterTemplate.html */; };
 		D826A7A61417E1A100285D7E /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D826A7A41417E1A100285D7E /* iAd.framework */; };
 		D826A7A71417E1A100285D7E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D826A7A51417E1A100285D7E /* StoreKit.framework */; };
+		D8399E0414CE340E00FEDF5B /* libTapLynx_1.5rc13.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8399E0314CE340E00FEDF5B /* libTapLynx_1.5rc13.a */; };
 		D83A352C14AF189100ED430A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D83A352B14AF189100ED430A /* libz.dylib */; };
-		D88FED8A14C0091C0067EDDE /* libTapLynx_1.5rc12.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D88FED8914C0091C0067EDDE /* libTapLynx_1.5rc12.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,8 +97,8 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D826A7A41417E1A100285D7E /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		D826A7A51417E1A100285D7E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D8399E0314CE340E00FEDF5B /* libTapLynx_1.5rc13.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTapLynx_1.5rc13.a; sourceTree = "<group>"; };
 		D83A352B14AF189100ED430A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D88FED8914C0091C0067EDDE /* libTapLynx_1.5rc12.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTapLynx_1.5rc12.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8399E0414CE340E00FEDF5B /* libTapLynx_1.5rc13.a in Frameworks */,
 				D83A352C14AF189100ED430A /* libz.dylib in Frameworks */,
 				D826A7A61417E1A100285D7E /* iAd.framework in Frameworks */,
 				D826A7A71417E1A100285D7E /* StoreKit.framework in Frameworks */,
@@ -120,7 +121,6 @@
 				846A8C21106C846B00182AC8 /* MediaPlayer.framework in Frameworks */,
 				846A8C25106C846E00182AC8 /* CoreLocation.framework in Frameworks */,
 				84C3054D1082C367001A7D74 /* MessageUI.framework in Frameworks */,
-				D88FED8A14C0091C0067EDDE /* libTapLynx_1.5rc12.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +138,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				D8399E0314CE340E00FEDF5B /* libTapLynx_1.5rc13.a */,
 				84695A36123B245E003D7236 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -173,7 +174,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D88FED8914C0091C0067EDDE /* libTapLynx_1.5rc12.a */,
 				D83A352B14AF189100ED430A /* libz.dylib */,
 				846A8C02106C844A00182AC8 /* libsqlite3.0.dylib */,
 				846A8C06106C845300182AC8 /* libxml2.2.dylib */,
