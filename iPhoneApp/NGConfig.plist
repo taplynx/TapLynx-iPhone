@@ -126,9 +126,9 @@
 			<array>
 				<dict>
 					<key>GalleryTitle</key>
-					<string>Dogs on SmugMug</string>
+					<string>Flickr Public Feed</string>
 					<key>xmlUrl</key>
-					<string>http://www.smugmug.com/hack/feed.mg?Type=search&amp;Data=dogs&amp;format=rss200</string>
+					<string>http://api.flickr.com/services/feeds/photos_public.gne</string>
 				</dict>
 			</array>
 			<key>NavController_color</key>
@@ -148,7 +148,7 @@
 			<key>TabImageName</key>
 			<string>tab_placeholder.png</string>
 			<key>Title</key>
-			<string>Photos</string>
+			<string>Flickr Public Photos</string>
 			<key>Type</key>
 			<string>photo_gallery</string>
 		</dict>
