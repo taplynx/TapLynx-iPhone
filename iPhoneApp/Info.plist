@@ -24,5 +24,9 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>PushIONotificationHost</key>
+	<string>api.pushio.com</string>
+	<key>PushIORegistrationHost</key>
+	<string>api.pushio.com</string>
 </dict>
 </plist>
