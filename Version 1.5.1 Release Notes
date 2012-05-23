@@ -1,0 +1,13 @@
+This is TapLynx version 1.5.1 Release Notes
+
+Ads more functional, including: iAds clickable in iOS 5 and iAd banners no longer obscuring content and are clickable.
+
+NG Config updates
+
+Irregular feed load in tabs sometimes left tabs blank, this issue has been resolved and performance speed improvement.
+
+Twitter issues, including: Twitter thumbnails now display correctly, with rounded corners and Twitter Sharing Modal Dialog now cancels.
+
+Overall stability improvements.
+
+
